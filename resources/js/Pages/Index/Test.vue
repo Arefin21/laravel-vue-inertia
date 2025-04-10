@@ -11,11 +11,11 @@
 import { Link } from '@inertiajs/vue3';
 </script>
 
-<script>
+<!-- <script>
 import { Link } from '@inertiajs/vue3'
 import MainLayout from '../../Layouts/MainLayout.vue'
 
 export default {
     layout: MainLayout
     }
-</script>
+</script> -->

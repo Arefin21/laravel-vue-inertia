@@ -6,17 +6,17 @@ setInterval(() => counter.value++,1000);
 </script> -->
 
 <template>
-   <MainLayout>
+   <!-- <MainLayout> -->
     <h2>Index!!</h2>
     The message is {{ test }}
     <br>
     <Link href="/show">Show Page</Link>
-   </MainLayout>
+   <!-- </MainLayout> -->
 </template>
 
 <script setup>
 
 import { Link } from '@inertiajs/vue3'
-import MainLayout from '../../Layouts/MainLayout.vue';
+// import MainLayout from '../../Layouts/MainLayout.vue';
 defineProps(['message','test'])
 </script>
