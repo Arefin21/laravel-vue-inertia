@@ -1,12 +1,14 @@
 <template>
     <div>
-      <h1>{{ listing.name }}</h1>
+        <ListingAddress :listing="listing" />
+
     </div>
   </template>
 
   <script setup>
+  import ListingAddress from '../../Components/ListingAddress.vue';
+
   defineProps({
     listing: Object
   })
   </script>
-  

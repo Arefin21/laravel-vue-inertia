@@ -5,7 +5,10 @@
         <!-- <Link href="`/listing/${ listing.id }`"> -->
             <Link :href="`/listing/${listing.id}`">
 
-                {{ listing.name }}
+                <!-- {{ listing.name }} -->
+                  <ListingAddress :listing="listing" />
+
+
         </Link>
 
     </div>
@@ -14,6 +17,8 @@
 
 <script setup>
 import { Link } from '@inertiajs/vue3';
+
+import ListingAddress from '../../Components/ListingAddress.vue';
 
 defineProps({
     listings:Array,
