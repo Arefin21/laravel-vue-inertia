@@ -14,4 +14,4 @@ Route::get('/show',[IndexController::class,'show']);
 Route::get('/test',[IndexController::class,'test']);
 
 
-Route::resource('listing', ListingController::class)->only('index', 'show','create');
+Route::resource('listing', ListingController::class)->only('index', 'show','create','store');
